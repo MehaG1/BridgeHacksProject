@@ -1,12 +1,82 @@
+<!--CLICK "RUN" TO SEE THE CODE-->
+<!--Where/how do we find the contact info and etc? oh ok.Yes, we can join the google meet.
+We make it up. Just put in anything that would usually be in a footer. Maybe like make up a logo and a slogan, and then also put the link to the next page at the bottom 
+If you want to discuss, you can join the google meets and I can help you 
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>BridgeHacks Project</title>
+    <title>Foodie</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <h1><center>Foodie</h1>
+      <h2><a href="info.html">Learn more</a></h2>
+      <h2><a href="#find">Find a Recipe</a></h2>
+    </header>
+    <main>
+    <!--this is how you make a checkbox-->
+    <div id="find">Here are our ingredients:</div>
+    <form class="food" action = "script.js" method="POST">
+      <input type="checkbox" id="oil" onclick = "sortRecipes()">Oil (canola oil)</input>
+      <br>
+      <input type="checkbox" id="potato" onclick = "sortRecipes()">Potato</input>
+      <br>
+      <input type="checkbox" id="turnip" onclick = "sortRecipes()">Turnip</input>
+      <br>
+      <input type="checkbox" id="onion" onclick = "sortRecipes()">Onion</input>
+      <br>
+       <input type="checkbox" id="peanut butter" onclick = "sortRecipes()">Peanut Butter</input>
+        <br>
+        <input type="checkbox" id="oat" onclick = "sortRecipes()">Oats</input>
+        <br>
+      <input type="checkbox" id="salsa" onclick = "sortRecipes()">Salsa</input>
+        <br>
+      <input type="checkbox" id="tofu" onclick = "sortRecipes()">Tofu</input>
+       <br>
+      <input type="checkbox" id="chocolate" onclick = "sortRecipes()">Chocolate</input>
+       <br>
+      <input type="checkbox" id="milk" onclick = "sortRecipes()">Milk</input>
+      <br>
+      <input type="checkbox" id="avacado" onclick = "sortRecipes()">Avacado</input>
+       <br>
+      <input type="checkbox" id="apples" onclick = "sortRecipes()">Apples</input>
+       <br>
+      <input type="checkbox" id="flour" onclick = "sortRecipes()">Flour</input>
+       <br>
+      <input type="checkbox" id="eggs" onclick = "sortRecipes()">Eggs</inout>
+       <br>
+      <input type="Checkbox" id="corn" onclick = "sortRecipes()">Corn</input>
+       <br>
+      <input type="checkbox" id="butter" onclick = "sortRecipes()">Butter</input>
+       <br>
+      <input type="checkbox" id="banana" onclick = "sortRecipes()">Banana</input>
+       <br>
+       <input type="checkbox" id="curry" onclick = "sortRecipes()">Curry</input>
+       <br>
+       <input type="checkbox" id="radish" onclick = "sortRecipes()">Radish</input>
+       <br>
+       
+      <!-- add more items, the rest of the checklist items-->
+
+      <br/>
+      
+    </form>
+    <section id="recipes">
+      <ul>
+        <!--this content is generated dynamically-->
+      </ul>
+    </section>
+    </main>
+    <footer>
+      <!--this is where you put stuff like the name again, contact info, etc.-->
+    </footer>
+
     <script src="script.js"></script>
+    
   </body>
 </html>
