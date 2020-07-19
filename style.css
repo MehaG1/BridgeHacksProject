@@ -1,25 +1,40 @@
-
 body{
   background-color: rgb(101, 226, 101);
   color: white;
   font-size: 20px;
-  
+  margin: 0;
 }
-html {
-  //border:7px darkgreen solid;
+
+#links a{
+  text-decoration: none;
+  color: black;
+  background: lightgreen;
+  padding: 10px;
+  font-size: 20px;
+  
 }
 
 header{
-  background-image: url(prettyveganfood.png);
-  background-repeat: no-repeat;
-  
+  width: 100%;
+}
+
+header img{
+  width: 100%;
+  margin: auto;
 }
 
 h1{
+  position: absolute;
+  top: 0;
+  left: -5px;
+  margin: 0;
+  border-radius: 10px;
+  background-color: green;
+  padding: 10px;
+  box-shadow: 3px 3px 6px black;
   font-size: 50px;
-  height: 400px;
-  color: black;
-  text-shadow: 3px 3px 2px white;
+  padding: 5px 30px;
+  color: white;
 }
 
 #submit-button{
@@ -81,16 +96,32 @@ li.single-recipe a:hover{
 }
 main{
   font-family: 'Karla', sans-serif;
+  font-size:125%
   
 }
 .ingredients{
-  border:7px yellow solid;
+  border:2px black solid; /*let me just add a little bit*/
+  background-color: green;
+  padding: 3%;
+  box-shadow: 7px 7px 7px black; /*looks pretty cool*/
+  margin: 10px;
+}
+
+form input{
+  margin: 5px;
+  font-size: 24px;
 }
 h3{
   font-family: 'Karla', sans-serif;
 
 }
 main h2{
-  font-size: 150%;
+  font-size: 140%;
   color: black;
+}
+
+@media (max-width: 575px){
+  section#recipes ul{
+    grid-template-columns: 1fr; 
+  }
 }
