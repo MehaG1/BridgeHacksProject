@@ -109,12 +109,11 @@ function sortRecipes(){
         i--;
       }
     }
-    console.log(sortedArray)
   }
   var htmlsection = document.querySelector("#recipes ul")
   htmlsection.innerHTML = "";
   for (var i in sortedArray){
     htmlsection.innerHTML += "<li class='single-recipe'><h2>" + sortedArray[i].name+"</h2><img class='foodpicture'src='"+sortedArray[i].picture+"'/><a target='_blank' href='"+sortedArray[i].link+"'>Link to recipe</a></li>";
   }
-  if (htmlsection.innerHTML=="") htmlsection.innerHTML = "<div>Couldn't find any recipes. Check some ingredients to find them</div>"
+  if (htmlsection.innerHTML=="") htmlsection.innerHTML = "<div class='error'>Couldn't find any recipes. Check some ingredients to find them</div>"
 }

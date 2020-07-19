@@ -7,11 +7,21 @@ body{
 
 #links a{
   text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  display: block;
   color: black;
   background: lightgreen;
   padding: 10px;
   font-size: 20px;
-  
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 2px solid black;
+}
+
+#links a:hover{
+  background-color: black;
+  color: white
 }
 
 header{
@@ -20,6 +30,8 @@ header{
 
 header img{
   width: 100%;
+  max-height: 90vh;
+  border-bottom: 3px black solid;
   margin: auto;
 }
 
@@ -58,7 +70,14 @@ section#recipes ul{
   grid-template-columns: 1fr 1fr 1fr; 
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
+}
+
+.error{
+  grid-column: 1/4;
+  text-align: center;
+  color: black;
+  margin: 30px 0;
 }
 
 h2{
@@ -75,7 +94,7 @@ li.single-recipe{
 }
 
 li.single-recipe a{
-  display: inline-block;
+  display: block;
   color: black;
   text-decoration: none;
   padding: 5px;
@@ -96,8 +115,8 @@ li.single-recipe a:hover{
 }
 main{
   font-family: 'Karla', sans-serif;
-  font-size:125%
-  
+  font-size:125%;
+  margin: 10px;
 }
 .ingredients{
   border:2px black solid; /*let me just add a little bit*/
@@ -118,6 +137,26 @@ h3{
 main h2{
   font-size: 140%;
   color: black;
+}
+
+h2#homebutton a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid black;
+  transition: all 0.3s;
+}
+
+
+h2#homebutton a:hover{
+  background: black;
+  color: white;
 }
 
 @media (max-width: 575px){
