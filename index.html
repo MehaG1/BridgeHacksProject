@@ -11,16 +11,16 @@ If you want to discuss, you can join the google meets and I can help you
     <meta name="viewport" content="width=device-width">
     <title>Foodie</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lobster&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1><center>Foodie</h1>
-      <h2><a href="info.html">Learn more</a></h2>
-      <h2><a href="#find">Find a Recipe</a></h2>
+    <header id="navbar" background-img= "salad.jpg">
+      <h1>Foodie</h1>
     </header>
     <main>
     <!--this is how you make a checkbox-->
-    <div id="find">Here are our ingredients:</div>
+    <div class="ingredients">
+    <div id="find">Which ingredients do you have?</div><br>
     <form class="food" action = "script.js" method="POST">
       <input type="checkbox" id="oil" onclick = "sortRecipes()">Oil (canola oil)</input>
       <br>
@@ -44,11 +44,11 @@ If you want to discuss, you can join the google meets and I can help you
       <br>
       <input type="checkbox" id="avacado" onclick = "sortRecipes()">Avacado</input>
        <br>
-      <input type="checkbox" id="apples" onclick = "sortRecipes()">Apples</input>
+      <input type="checkbox" id="apple" onclick = "sortRecipes()">Apples</input>
        <br>
       <input type="checkbox" id="flour" onclick = "sortRecipes()">Flour</input>
        <br>
-      <input type="checkbox" id="eggs" onclick = "sortRecipes()">Eggs</inout>
+      <input type="checkbox" id="egg" onclick = "sortRecipes()">Eggs</inout>
        <br>
       <input type="Checkbox" id="corn" onclick = "sortRecipes()">Corn</input>
        <br>
@@ -59,7 +59,7 @@ If you want to discuss, you can join the google meets and I can help you
        <input type="checkbox" id="curry" onclick = "sortRecipes()">Curry</input>
        <br>
        <input type="checkbox" id="radish" onclick = "sortRecipes()">Radish</input>
-       <br>
+      </div>
        
       <!-- add more items, the rest of the checklist items-->
 
@@ -73,7 +73,8 @@ If you want to discuss, you can join the google meets and I can help you
     </section>
     </main>
     <footer>
-      <!--this is where you put stuff like the name again, contact info, etc.-->
+      <h2><a href="info.html">Learn more</a></h2>
+      <h2><a href="#find">Find a Recipe</a></h2>
     </footer>
 
     <script src="script.js"></script>
